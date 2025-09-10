@@ -19,8 +19,8 @@ def clean_text(text):
     return text
 
 def load_and_preprocess():
-    fake = pd.read_csv('data/raw/fake.csv')
-    true = pd.read_csv('data/raw/true.csv')
+    fake = pd.read_csv('../data/raw/fake.csv')
+    true = pd.read_csv('../data/raw/true.csv')
     fake['label'] = 0
     true['label'] = 1
     data = pd.concat([fake, true], ignore_index=True)
